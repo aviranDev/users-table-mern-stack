@@ -1,5 +1,5 @@
 import axios from 'axios';
-const apiUrl = "http://localhost:3900";
+const apiUrl = "https://users-table-mern-stack.herokuapp.com";
 
 //Add user
 export const addUser = (user) => {
