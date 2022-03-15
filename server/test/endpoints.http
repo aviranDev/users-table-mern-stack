@@ -1,0 +1,37 @@
+@local=http://localhost:3900/api/users
+
+//Add user
+POST {{local}}/add-user 
+Content-Type: application/json
+
+{
+"firstName": "asdas",
+"lastName": "asdasd",
+"userId": "321656117"
+}
+
+###
+
+GET {{local}}/display-one-user/62303a5c07ae4f5f1e948141
+
+###
+
+//Display all users
+GET {{local}}/display-all-users
+
+###
+
+//Edit user details by id
+PUT {{local}}/edit-user-details/6230cfcd3b8c504d69d6629c
+Content-Type: application/json
+
+{
+"firstName": "Aviran 9",
+"lastName": "asdasd",
+"userId": "321654987"
+}
+
+###
+
+//Remove user by id
+DELETE {{local}}/delete-user/622e796e3abf7f95c08e5ffd
